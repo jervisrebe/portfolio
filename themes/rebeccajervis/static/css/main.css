@@ -17,16 +17,13 @@ body {
     opacity: 0.8;
 }
 
-nav {
-    padding-top: 40px;
-}
-
 #intro {
     background-image: url('/img/apps.png');
     background-repeat: no-repeat;
     background-position: top right -30px;
     background-size: contain;
     height: 400px;
+    margin-bottom: 120px;
 }
 
 #intro h1 {
@@ -201,4 +198,13 @@ img + em {
     }
 }
 
-
+@media (min-width: 1280px) { 
+    #intro {
+        background-image: none;
+        height: 200px;
+    }
+    .case-study-cover .cover-column-right {
+        background-position: top right;
+        margin-right: -1rem;
+    }
+}
