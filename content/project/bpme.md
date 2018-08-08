@@ -17,11 +17,11 @@ Our focus when developing the user experience was to not take away from the user
 
 We ended up running many user testing sessions - both in office and guerilla testing at the station. The smaller guerilla tests offered and quick and easy way to ensure that what we were building was right for our target audience. 
 
-![](/img/bp2.jpg)
-*Sample of wireframes for BPMe*
+![](/img/bp2.gif)
+*The steam animation on the Wild Bean Cafe tab*
 
 ![](/img/bp3.jpg)
-*Sample of wireframes for BPMe*
+*BPMe Coffee Ordering visuals*
 
 Wild Bean Cafe is a well established brand, so when it came to the visual design the key was to emphasise their existing brand in a mobile first way. 
 
