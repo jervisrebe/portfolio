@@ -39,11 +39,5 @@ title = "Grabaseat"
 location = "New Zealand"
 type = "Android"
 year = "2015 - 2016"
-icon = "bpau-icon.jpg"
+icon = "grabaseat-icon.jpg"
 
-[[projects]]
-title = "Randstad"
-location = "Asia Pacific"
-type = "iOS & Android"
-year = "2015 - 2017"
-icon = "randstad-icon.jpg"
