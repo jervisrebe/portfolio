@@ -1,0 +1,69 @@
+{{ partial "header.html" . }}
+
+    <section class="section single-post">
+        
+        <div class="container header">
+            <h1>{{ .Title }}</h1>
+            <h2>{{ .Params.country }} • {{ .Params.platform }} • {{ .Params.writtenDate }}</h2>
+        </div>
+    
+        <div class="container intro">
+            {{ $markdown := .Params.intro | markdownify }}
+
+            {{ if not ( strings.Contains $markdown "<p>" ) }}
+                <p>{{ $markdown }}</p>
+            {{ else }}
+                {{ $markdown }}
+            {{ end }}
+        </div>
+
+        <div class="container download">
+
+            {{ if .Params.appStoreUrl }}
+                <a class="appstore" href="{{ .Params.appStoreUrl }}">
+                    <img src="/img/appstore.png" alt="">
+                </a>
+            {{ end }}
+
+            {{ if .Params.googleStoreUrl }}
+                <a class="googlestore" href="{{ .Params.googleStoreUrl }}">
+                    <img src="/img/googleplay.png" alt="">
+                </a>
+            {{ end }}
+        </div>
+
+        <div class="container content">
+            {{ $markdown := .Content | markdownify }}
+
+            {{ if not ( strings.Contains $markdown "<p>" ) }}
+                <p>{{ $markdown }}</p>
+            {{ else }}
+                {{ $markdown }}
+            {{ end }}
+        </div>
+
+    </section>
+
+    <section class="section bottom-links">
+        <div class="container">
+
+            <div class="back-top is-pulled-left">
+                <a href="#">Back to top</a>
+            </div>
+
+            <div class="is-pulled-right">
+                {{ if .Next }}
+                    {{ with .Next }}
+                        <a class="button" href="{{.Permalink}}" style="background-color:#{{ .Params.buttonColor }};">{{ .Title }}</a>
+                    {{ end }}
+                {{ else }}
+                    {{ with .Prev }}
+                        <a class="button" href="{{.Permalink}}" style="background-color:#{{ .Params.buttonColor }};">{{ .Title }}</a>
+                    {{ end }}
+                {{ end }}
+            </div>
+
+        </div>
+    </section>
+
+{{ partial "footer.html" . }}

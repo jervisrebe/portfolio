@@ -1,0 +1,32 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+
+    <title>
+        {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+        {{ if eq $url "/" }}
+            {{ .Site.Title }}
+        {{ else }}
+            {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}
+        {{ end }}
+    </title>
+
+
+    <!-- Fonts and icon CSS -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/bulma.min.css">
+
+    {{ if .Site.Params.cachebuster }}
+        {{ $t := now }}
+        <link rel="stylesheet" href="/css/normalize.css?t={{$t}}">
+        <link rel="stylesheet" href="/css/main.css?t={{$t}}">
+    {{ else }}
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
+    {{ end }}
+
+    </head>

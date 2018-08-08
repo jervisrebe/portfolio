@@ -1,0 +1,53 @@
+   
+        <section id="footer" class="section">
+            <div class="container">
+                <div class="level">
+                    <!-- Left side -->
+                    <div class="level-left">
+                        
+                        {{ if .Site.Params.dribbble }}
+                            <p class="level-item">
+                                <a href="{{ .Site.Params.dribbble }}" target="_blank" rel="noopener" class="link">
+                                    <img class="icon" src="/img/dribble-icon.png" target="_blank" alt="dribbble">
+                                </a>
+                            </p>
+                        {{ end }}
+
+                        {{ if .Site.Params.linkedin }}
+                            <p class="level-item">
+                                <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener" class="link">
+                                    <img class="icon" src="/img/linkedin-icon.png" target="_blank" alt="linkedin">
+                                </a>
+                            </p>
+                        {{ end }}
+
+                        {{ if .Site.Params.twitter }}
+                            <p class="level-item">
+                                <a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener" class="link">
+                                    <img class="icon" src="/img/twitter-icon.png" target="_blank" alt="twitter">
+                                </a>
+                            </p>
+                        {{ end }}
+
+                        {{ if .Site.Params.instagram }}
+                            <p class="level-item">
+                                <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener" class="link">
+                                    <img class="icon" src="/img/instagram-icon.png" target="_blank" alt="instagram">
+                                </a>
+                            </p>
+                        {{ end }}
+
+                    </div>
+                    
+                    <!-- Right side -->
+                    <div class="level-right">
+                        <p class="level-item"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </body>
+</html>

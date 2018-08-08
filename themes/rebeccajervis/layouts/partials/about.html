@@ -1,0 +1,20 @@
+<section class="section" id="about-me">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-6">
+                <h2>About me</h2>
+
+                {{ $markdown := .Site.Params.about | markdownify }}
+
+                {{ if not ( strings.Contains $markdown "<p>" ) }}
+                    <p>{{ $markdown }}</p>
+                {{ else }}
+                    {{ $markdown }}
+                {{ end }}
+            </div>
+            <div class="column cover is-offset-1-desktop is-5-desktop is-6-tablet" style="background-image:url('img/{{ .Site.Params.aboutImage }}')">
+
+            </div>
+        </div>
+    </div>
+</section>

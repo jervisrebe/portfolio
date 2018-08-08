@@ -1,0 +1,24 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Rebecca Jervis | UI & UX Designer"
+theme = "rebeccajervis"
+
+[params]
+cachebuster = true
+author = "Rebecca Jervis"
+description = "UI & UX Designer"
+about = """
+I’m a UX & UI designer based in Wellington.
+
+Currently an Interactive Designer at PaperKite, I’ve worked with brands such as BP New Zealand & Australia, Air New Zealand and Coca-Cola to create innovative mobile solutions. 
+
+I’m passionate about creating what’s right for the user and that starts with understanding exactly what they need. 
+
+In my spare time I enjoy reading, writing fiction and travelling. My latest adventure was to China, June 2018. 
+"""
+aboutImage = "aboutme.jpg"
+email = "rebecca.jervis@icloud.com"
+dribbble = "http://google.com"
+linkedin = "http://google.com"
+twitter = "http://google.com"
+instagram = "http://google.com"
