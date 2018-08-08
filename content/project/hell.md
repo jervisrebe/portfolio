@@ -6,8 +6,8 @@ writtenDate: "2015 - present"
 cover: "hell-cover.png"
 buttonColor: "383535"
 intro: "Hell Pizza have a powerful and well known brand presence in New Zealand. As UX lead, my task was to create a beautiful mobile solution for their online ordering system."
-googleStoreUrl: "https://google.com"
-appStoreUrl: "https://google.com"
+googleStoreUrl: "https://play.google.com/store/apps/details?id=nz.co.hellpizza.order"
+appStoreUrl: "https://itunes.apple.com/nz/app/hell-pizza/id460256659?mt=8"
 ---
 
 ![](/img/hell1.jpg)

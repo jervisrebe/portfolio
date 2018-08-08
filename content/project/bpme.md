@@ -6,8 +6,8 @@ writtenDate: "2015 - present"
 cover: "bp-cover.png"
 buttonColor: "A22B38"
 intro: "BP New Zealand had a vision to transform the way a customer interacts with their petrol station. As UX lead for this project, I oversaw the implementation of coffee ordering into this app."
-googleStoreUrl: "https://google.com"
-appStoreUrl: "https://google.com"
+googleStoreUrl: "https://play.google.com/store/apps/details?id=com.bp.bpmenz&hl=en"
+appStoreUrl: "https://itunes.apple.com/nz/app/bpme-for-faster-fuel-coffee/id1116524739?mt=8"
 ---
 
 ![](/img/bp1.jpg)
