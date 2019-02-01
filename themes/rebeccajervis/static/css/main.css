@@ -11,11 +11,24 @@ body {
     padding: 18px 30px;
     border: 1px solid #fff;
     background: none;
+    transition: all 0.3s;
 }
 
 .button:hover {
+    color: #323339;
+    border: 1px solid #fff;
+    background: #fff;
+}
+
+.button-dark {
+    color: #323339;
+    border: 1px solid #323339;
+}
+
+.button-dark:hover {
     color: #fff;
-    opacity: 0.8;
+    background: #323339;
+    border: 1px solid #323339;
 }
 
 #home-page .nav {
@@ -159,6 +172,11 @@ body {
 #footer a {
     font-size: 12px;
     color: #1A2332;
+}
+
+#footer .social {
+    display: inline-block;
+    margin-right: 15px;
 }
 
 .single-post .header {

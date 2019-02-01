@@ -38,7 +38,7 @@
                         <h3>{{ .Params.title }}</h3>
                         <p class="platform">{{ .Params.platform }}</p>
                         <p class="country">{{ .Params.country }}</p>
-                        <a class="button" href="{{.Permalink}}" style="border: 1px solid #{{ .Params.buttonColor }}; color: #{{ .Params.buttonColor }};">Case study</a>
+                        <a class="button" href="{{.Permalink}}">Case study</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                     <div class="column is-half-tablet is-full-mobile other-project">
                         <div class="columns is-mobile is-vcentered">
                             <div class="column is-6-tablet is-10-mobile name">
-                                <a href="{{.Permalink}}">
+                                <a href="{{.link}}">
                                     <h3>{{ .title }}</h3>
                                 </a>
                             </div>

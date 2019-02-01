@@ -54,11 +54,11 @@
             <div class="is-pulled-right">
                 {{ if .Next }}
                     {{ with .Next }}
-                        <a class="button" href="{{.Permalink}}" style="background-color:#{{ .Params.buttonColor }};">{{ .Title }}</a>
+                        <a class="button button-dark" href="{{.Permalink}}">{{ .Title }}</a>
                     {{ end }}
                 {{ else }}
                     {{ with .Prev }}
-                        <a class="button" href="{{.Permalink}}" style="background-color:#{{ .Params.buttonColor }};">{{ .Title }}</a>
+                        <a class="button button-dark" href="{{.Permalink}}">{{ .Title }}</a>
                     {{ end }}
                 {{ end }}
             </div>

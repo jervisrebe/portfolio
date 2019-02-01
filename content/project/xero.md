@@ -1,10 +1,10 @@
 ---
-title: "Hell Pizza"
+title: "Xero"
 country: "New Zealand"
 platform: "iOS & Android"
 writtenDate: "2016 - present"
-backgroundColor: "323339"
-animationJSON: "img/hell/hell.json"
+backgroundColor: "4BBCF4"
+animationJSON: "img/xero/xero.json"
 intro: "Hell Pizza have a powerful and well known brand presence in New Zealand. As UX lead, my task was to create a beautiful mobile solution for their online ordering system."
 googleStoreUrl: "https://play.google.com/store/apps/details?id=nz.co.hellpizza.order"
 appStoreUrl: "https://itunes.apple.com/nz/app/hell-pizza/id460256659?mt=8"
