@@ -50,7 +50,7 @@
                                     container: document.getElementById('{{ urlize .Params.title }}'),
                                     renderer: 'svg',
                                     loop: false,
-                                    autoplay: true,
+                                    autoplay: false,
                                     path: '{{ .Params.animationJSON }}'
                                 });
                                 
@@ -58,6 +58,16 @@
                     e.preventDefault();
                     animation.goToAndPlay(0, true);
                 }
+
+                var waypoint = new Waypoint({
+                                    element: document.getElementById('{{ urlize .Params.title }}'),
+                                    offset: '75%',
+                                    handler: function(direction) {
+                                        if (direction == "down") {
+                                            animation.goToAndPlay(0, true);
+                                        }
+                                    }
+                                })
 
             })();
         </script>
@@ -89,6 +99,5 @@
     </section>
 
     {{ partial "about.html" . }}
-
-
+    
 {{ partial "footer.html" . }}
