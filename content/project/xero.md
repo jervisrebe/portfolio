@@ -18,7 +18,7 @@ My role at Xero is to work within two agile pods (iOS and Android) to improve an
 At Xero I have been lucky enough to work alongside a team of user researchers to help me facilitate and analyse research that we regularly run. 
 
 ![](/img/xero2.jpg)
-*Home screen flame animation*
+*Xero Accounting & Invoices visuals*
 
 Both apps rely heavily on the Human Interface guidelines and Material Design guidelines which means as a designer I am almost completely focussed on the user experience side of the design, rather than aesthetics which creates an interesting challenge.
 
