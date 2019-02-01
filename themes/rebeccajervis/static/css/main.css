@@ -1,6 +1,6 @@
 body {
     font-size: 16px;
-    color: #737B8C;
+    color: #323339;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -18,18 +18,23 @@ body {
     opacity: 0.8;
 }
 
+#home-page .nav {
+    display: none;
+}
+
 #intro {
-    background-image: url('/img/apps.png');
-    background-repeat: no-repeat;
-    background-position: top right -30px;
-    background-size: contain;
-    height: 400px;
-    margin-bottom: 120px;
+    padding-top: 114px;
+    padding-bottom: 114px;
+}
+
+#intro #paradise-animation, #header-paradise-animation {
+    display: inline-block;
+    width: 70px;
 }
 
 #intro h1 {
     font-size: 28px;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 0;
 }
 
@@ -67,10 +72,37 @@ body {
     margin-bottom: 32px;
 }
 
+#other-projects {
+    padding-top: 114px;
+    padding-bottom: 114px;
+}
+
 #other-projects h2 {
-    font-size: 18px;
-    color: #1A2332;
-    margin-bottom: 27px;
+    font-size: 0.8em;
+    color: #5E606B;
+    margin-bottom: 35px;
+}
+
+.other-project .name {
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.other-project .name:hover {
+    margin-right: 20px;
+}
+
+.other-project {
+    margin-bottom: 20px;
+}
+
+.other-project .chevron {
+    background-image: url('/img/chevron@2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
 }
 
 .other-project img {
@@ -83,7 +115,7 @@ body {
 }
 
 .other-project h3 {
-    font-size: 14px;
+    font-size: 1.3em;
     color: #1A2332;
 }
 
@@ -98,8 +130,8 @@ body {
 }
 
 #about-me h2 {
-    font-size: 18px;
-    color: #1A2332;
+    font-size: 0.8em;
+    color: #5E606B;
     margin-bottom: 16px;
 }
 
@@ -116,13 +148,12 @@ body {
 }
 
 #footer {
-    background:#E9EDF5;
     padding: 21px;
 }
 
 #footer img {
-    width: 21px;
-    height: 21px;
+    width: 15px;
+    height: 15px;
 }
 
 #footer a {
@@ -203,7 +234,6 @@ img + em {
 @media (min-width: 1280px) { 
     #intro {
         background-image: none;
-        height: 200px;
     }
     .case-study-cover .cover-column-right {
         background-position: top right;

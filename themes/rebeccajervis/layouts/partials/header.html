@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     {{ partial "head.html" . }}
-    <body>
+    <body lang="{{ .Site.Params.lang }}" class="{{ with .Params.layout }} {{ . }}-page {{ end }}"  {{ if .IsHome }} id="home-page" {{ end }}>
 
         <section class="section nav">
             <div class="container">
@@ -9,8 +9,19 @@
                     <!-- Left side -->
                     <div class="level-left">
                         <a href="/">
-                            <img width="139" src="/img/signature.png" alt="">
+                            <div id="header-paradise-animation"></div>
                         </a>
+                        <script>
+                            (function() {
+                                lottie.loadAnimation({
+                                    container: document.getElementById('header-paradise-animation'),
+                                    renderer: 'svg',
+                                    loop: true,
+                                    autoplay: true,
+                                    path: '/img/paradise.json'
+                                });
+                            })();
+                        </script>
                     </div>
                     
                     <!-- Right side -->

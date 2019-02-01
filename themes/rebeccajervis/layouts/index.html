@@ -1,10 +1,30 @@
 {{ partial "header.html" . }}
 
-    <section id="intro" class="section">
+    <section id="intro" class="section has-text-centered">
         <div class="container">
+            <a href="#" id="button-paradise-animation">
+                <div id="paradise-animation"></div>
+            </a>
             <h1>{{ .Site.Params.author }}</h1>
             <h2>{{ .Site.Params.description }}</h2>
         </div>
+        <script>
+            (function() {
+                var animation = lottie.loadAnimation({
+                                    container: document.getElementById('paradise-animation'),
+                                    renderer: 'svg',
+                                    loop: false,
+                                    autoplay: true,
+                                    path: 'img/paradise.json'
+                                });
+                
+                document.getElementById("button-paradise-animation").onclick = function(e){
+                    e.preventDefault();
+                    animation.goToAndPlay(0, true);
+                }
+
+            })();
+        </script>
     </section>
 
     {{ range $index, $element := where .Pages "Section" "project" }} 
@@ -12,7 +32,9 @@
             <div class="container">
                 <div class="columns is-half is-centered has-text-centered is-vcentered">
                     <div class="column is-4 text-column">
-                        <span class="logo-animation" id="{{ urlize .Params.title }}"></span>
+                        <a href="#" id="button-{{ urlize .Params.title }}">
+                            <span class="logo-animation" id="{{ urlize .Params.title }}"></span>
+                        </a>
                         <h3>{{ .Params.title }}</h3>
                         <p class="platform">{{ .Params.platform }}</p>
                         <p class="country">{{ .Params.country }}</p>
@@ -24,13 +46,19 @@
 
         <script>
             (function() {
-                lottie.loadAnimation({
-                    container: document.getElementById('{{ urlize .Params.title }}'),
-                    renderer: 'svg',
-                    loop: true,
-                    autoplay: true,
-                    path: '{{ .Params.animationJSON }}'
-                });
+                var animation = lottie.loadAnimation({
+                                    container: document.getElementById('{{ urlize .Params.title }}'),
+                                    renderer: 'svg',
+                                    loop: false,
+                                    autoplay: true,
+                                    path: '{{ .Params.animationJSON }}'
+                                });
+                                
+                document.getElementById("button-{{ urlize .Params.title }}").onclick = function(e){
+                    e.preventDefault();
+                    animation.goToAndPlay(0, true);
+                }
+
             })();
         </script>
     {{ end }}
@@ -40,14 +68,19 @@
         <div class="container">
             <h2>Other Projects</h2>
 
-            <div class="columns is-multiline is-mobile other-project">
+            <div class="columns is-multiline is-mobile ">
                 {{ range $.Site.Data.others.projects }}
-                    <div class="column is-2-tablet is-one-third-mobile">
-                        <img src="img/{{ .icon }}" alt="">
-                        <h3>{{ .title }}</h3>
-                        <span>{{ .location }}</span>
-                        <span>{{ .type }}</span>
-                        <span>{{ .year }}</span>
+                    <div class="column is-half-tablet is-full-mobile other-project">
+                        <div class="columns is-mobile is-vcentered">
+                            <div class="column is-6-tablet is-10-mobile name">
+                                <a href="{{.Permalink}}">
+                                    <h3>{{ .title }}</h3>
+                                </a>
+                            </div>
+                            <div class="column is-1">
+                                <div class="chevron"></div>
+                            </div>
+                        </div>
                     </div>
                 {{ end }}
             </div>
