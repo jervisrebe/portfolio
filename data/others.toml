@@ -5,7 +5,7 @@ location = "Australia"
 type = "iOS & Android"
 year = "2016 - present"
 icon = "bpau-icon.jpg"
-link = "https://google/com"
+link = "https://itunes.apple.com/au/app/bpme-for-bp-plus-fuel-card/id1132394222?mt=8"
 
 [[projects]]
 title = "Virtual Rydges"
@@ -13,15 +13,7 @@ location = "New Zealand"
 type = "iOS"
 year = "2016"
 icon = "rydges-icon.jpg"
-link = "https://google/com"
-
-[[projects]]
-title = "Countdown"
-location = "New Zealand"
-type = "Conceptual exploration"
-year = "2018"
-icon = "countdown-icon.jpg"
-link = "https://google/com"
+link = "https://itunes.apple.com/nz/app/virtual-rydges/id1119044123?mt=8"
 
 [[projects]]
 title = "Scratch Power"
@@ -29,7 +21,7 @@ location = "USA"
 type = "iOS & Android"
 year = "2015 - 2018"
 icon = "ampm-icon.jpg"
-link = "https://google/com"
+link = "https://itunes.apple.com/us/app/ampm-scratch-power/id564049196?mt=8"
 
 [[projects]]
 title = "Coca Cola Vendswift"
@@ -37,7 +29,7 @@ location = "Australia"
 type = "Android"
 year = "2015 - 2016"
 icon = "vendswift-icon.jpg"
-link = "https://google/com"
+link = "http://www.vendswift.com.au"
 
 [[projects]]
 title = "Grabaseat"
@@ -45,4 +37,4 @@ location = "New Zealand"
 type = "Android"
 year = "2015 - 2016"
 icon = "grabaseat-icon.jpg"
-link = "https://google/com"
+link = "https://play.google.com/store/apps/details?id=com.airnewzealand.android.grabaseat&hl=en_US"
