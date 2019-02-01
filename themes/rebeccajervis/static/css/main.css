@@ -5,11 +5,12 @@ body {
 }
 
 .button {
-    border-radius: 0;
+    border-radius: 4px;
     font-size: 12px;
     color: #fff;
     padding: 18px 30px;
-    border: none;
+    border: 1px solid #fff;
+    background: none;
 }
 
 .button:hover {
@@ -36,33 +37,34 @@ body {
     font-size: 18px;
 }
 
+.logo-animation {
+    width: 100px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
 .case-study-cover {
+    padding-top: 114px;
+    padding-bottom: 114px;
 }
 
 .case-study-cover h3 {
-    font-size: 28px;
-    color: #1A2332;
-}
-
-.case-study-cover .cover-column {
-    min-height: 500px;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-}
-
-.case-study-cover .cover-column-right {
-    background-position: top left;
-    margin-right: -6.5rem;
-}
-
-.case-study-cover .cover-column-left {
-    min-height: 600px;
-    background-position: top left;
-    margin-left: -8.5rem;
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 12px;
 }
 
 .case-study-cover p {
-    margin-bottom: 25px;
+    color: #fff;
+}
+
+.case-study-cover .platform {
+    font-size: 1.1em;
+}
+
+.case-study-cover .country {
+    font-size: 0.9em;
+    margin-bottom: 32px;
 }
 
 #other-projects h2 {

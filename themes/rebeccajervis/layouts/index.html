@@ -8,35 +8,31 @@
     </section>
 
     {{ range $index, $element := where .Pages "Section" "project" }} 
-        {{ if (modBool $index 2) }}
-            <section class="section case-study-cover">
-                <div class="container">
-                    <div class="columns is-vcentered">
-                        <div class="column is-4 text-column">
-                            <h3>{{ .Params.title }}</h3>
-                            <p>{{ .Params.country }} • {{ .Params.platform }}</p>
-                            <a class="button" href="{{.Permalink}}" style="background-color:#{{ .Params.buttonColor }};">Case study</a>
-                        </div>
-                        <div class="column cover-column cover-column-right" style="background-image:url('img/{{ .Params.cover }}')">
-                        </div>
+        <section class="section case-study-cover" style="background-color:#{{ .Params.backgroundColor }};">
+            <div class="container">
+                <div class="columns is-half is-centered has-text-centered is-vcentered">
+                    <div class="column is-4 text-column">
+                        <span class="logo-animation" id="{{ urlize .Params.title }}"></span>
+                        <h3>{{ .Params.title }}</h3>
+                        <p class="platform">{{ .Params.platform }}</p>
+                        <p class="country">{{ .Params.country }}</p>
+                        <a class="button" href="{{.Permalink}}" style="border: 1px solid #{{ .Params.buttonColor }}; color: #{{ .Params.buttonColor }};">Case study</a>
                     </div>
                 </div>
-            </section>
-        {{ else }}
-            <section class="section case-study-cover">
-                    <div class="container">
-                        <div class="columns is-vcentered reverse-row-order">
-                            <div class="column is-7-fullhd is-9-desktop cover-column cover-column-left" style="background-image:url('img/{{ .Params.cover }}')">
-                            </div>
-                            <div class="column text-column">
-                                <h3>{{ .Params.title }}</h3>
-                                <p>{{ .Params.country }} • {{ .Params.platform }}</p>
-                                <a class="button" href="{{.Permalink}}" style="background-color:#{{ .Params.buttonColor }};">Case study</a>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-        {{ end }} 
+            </div>
+        </section>
+
+        <script>
+            (function() {
+                lottie.loadAnimation({
+                    container: document.getElementById('{{ urlize .Params.title }}'),
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    path: '{{ .Params.animationJSON }}'
+                });
+            })();
+        </script>
     {{ end }}
 
     <section id="other-projects" class="section">
